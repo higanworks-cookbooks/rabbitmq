@@ -5,4 +5,6 @@ if node[:platform] == 'smartos'
   default['rabbitmq']['er_version'] = '15'
   default['rabbitmq']['ulimit_n'] = 65000
   default['rabbitmq']['root_erlang_cookie_path'] = '/root/.erlang.cookie'
+  default['rabbitmq']['mgmt']['usessl'] = false
+  default['rabbitmq']['mgmt']['ssl_port'] = 55671
 end
